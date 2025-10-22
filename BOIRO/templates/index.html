@@ -1,0 +1,390 @@
+< {% load static %}>
+<!doctype html>
+<html lang="fr">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="{% static 'css/style.css' %}">
+	<link rel="stylesheet" href="{% static 'css/slick.css' %}">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+	<style>
+		.scrolling-news {
+			overflow: hidden;
+			white-space: nowrap;
+			width: 100%;
+			max-width: 500px;
+			#background: linear-gradient(135deg, #ff6b6b, #4ecdc4);
+			padding: 8px 15px;
+			border-radius: 25px;
+			box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+			margin-left: 20px;
+		}
+		
+		.news-content {
+			display: inline-block;
+			animation: scroll-left 25s linear infinite;
+		}
+		
+		.news-content span {
+			display: inline-block;
+			margin-right: 80px;
+			font-size: 16px;
+			color: white;
+			font-weight: 600;
+			text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+			letter-spacing: 0.5px;
+		}
+		
+		@keyframes scroll-left {
+			0% {
+				transform: translateX(100%);
+			}
+			100% {
+				transform: translateX(-100%);
+			}
+		}
+		
+		.news-content:hover {
+			animation-play-state: paused;
+		}
+		
+		.scrolling-news:hover {
+			transform: scale(1.05);
+			transition: transform 0.3s ease;
+		}
+	</style>
+	<title>Mouctar Boiro</title>
+</head>
+<body>
+
+	<!-- Navigation -->
+	<nav class="site-navigation">
+		<div class="site-navigation-inner site-container">
+			<div class="logo-container">
+				<img src="{% static 'images/initiales_logo.png' %}" alt="Mouctar Boiro" style="width: 89px; height: 45px;">
+				<span class="brand-span">Acteur, Créateur de contenu</span>
+			</div>
+			<span class="brand-span">Mouctar Boiro</span>
+			<div class="main-navigation">
+				<ul class="main-navigation__ul">
+					<li><a href="#">Contact</a></li>
+					<li><a href="#">EMAIL</a></li>
+					<li><a href="#">facebook</a></li>
+					<li><a href="#">instagram</a></li>
+					<li><a href="#">twitter</a></li>
+					<li><a href="#">youtube</a></li>
+					<li><a href="#">tiktok</a></li>
+					
+				</ul>
+			</div>
+			<div id="myBtn" class="burger-container" onclick="myFunction(this)">
+				<div class="bar1"></div>
+				<div class="bar2"></div>
+				<div class="bar3"></div>
+			</div>
+			<script>
+				function myFunction(x) {
+					x.classList.toggle("change");
+				}
+			</script>
+
+		</div>
+	</nav>
+	<!-- Navigation end -->
+
+	<!-- Top banner -->
+	<section class="fh5co-top-banner">
+		<div class="top-banner__inner site-container">
+			<div class="top-banner__image">
+				<img src="{% static 'images/photo.jpg' %}" alt="Mouctar Boiro" style="width: 100%; height: 100%;">
+			</div>
+			<div class="top-banner__text">
+				<div class="top-banner__text-up">
+					<span class="brand-span">Salut! Je suis</span>
+					<h2 class="top-banner__h2">Mouctar</h2>
+				</div>
+				<div class="top-banner__text-down mb-5">
+					<h2 class="top-banner__h2">Boiro</h2>
+					<span class="brand-span">Acteur, Influenceur, Créateur de contenu, comedien</span>
+				</div>
+				<div class="scrolling-news mt-5 mb-5">
+					<div class="news-content text-white mt-5">
+						<span class="text-white">Mouctar sera présent au Festifall des Arts Africains à Cannes du mercredi 22 au vendredi 24 octobre 2025</span>
+						<span class="text-white">Allez suivre son tout nouveau film "Le Meilleur du Monde" au cinéma à partir du 25 octobre 2025</span>
+					</div>
+				</div>
+				<div class="mt-5">
+					<a href="https://www.imdb.com/fr/title/tt36968706/?ref_=nm_ov_bio_lk" class="brand-button">Lire Plus </a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Top banner end -->
+
+	<!-- About me -->
+	<section class="fh5co-about-me">
+		<div class="about-me-inner site-container">
+			<article class="portfolio-wrapper">
+				<div class="portfolio__img">
+					<img src="{% static 'images/profile2.jpg' %}" class="about-me__profile" alt="about me profile picture">
+				</div>
+				<div class="portfolio__bottom">
+					<div class="portfolio__name">
+						<span>Jr</span>
+						<h2 class="universal-h2">Mouctar Boiro – Prince Jr</h2>
+					</div>
+					<p>Mouctar Boiro, connu sous le nom de Prince Jr, est un acteur, comédien, influenceur, créateur de contenu et Électricien,
+						basé à Paris, France.
+						<br>
+						<br>
+						<Strong>...Son Père lui sort de l’école et l’envoie au Sénégal pour mémoriser le Coran.</Strong>
+						
+						<br>
+						<br>
+						<br>
+						
+						
+					</p>
+					<div  style="text-align: left;">
+						<p>
+							<strong>Pays :</strong> France <img src="https://upload.wikimedia.org/wikipedia/en/c/c3/Flag_of_France.svg" alt="France" style="width:15px; vertical-align:middle;"><br>
+							<strong>Date de naissance :</strong> 18 février 2006<br>
+							<strong>Lieu de naissance :</strong> Koundara, République de Guinée<br>
+							<strong>Nationalité :</strong> Guinéenne <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Flag_of_Guinea.svg/1200px-Flag_of_Guinea.svg.png" alt="Guinée" style="width:15px; vertical-align:middle;"><br>
+							<strong>Profession :</strong> Acteur, Comédien, Influenceur, Créateur de contenu, Électricien<br>
+							<strong>Filmographie :</strong> <a href="https://www.imdb.com/fr/title/tt36968706/?ref_=nm_ov_bio_lk" target="_blank">Le Meilleur du Monde</a>
+						</p>
+					</div>
+					
+
+
+				</div>
+			</article>
+			<div class="about-me__text">
+				<div class="about-me-slider">
+					<div class="about-me-single-slide">
+						<h2 class="universal-h2 universal-h2-bckg">Apropos de Moi</h2>
+
+						<p><span>M</span>ouctar Boiro, connu sous le nom de Prince Jr, est un acteur, comédien, influenceur et
+								Électricien , né le 18 février 2006 à Koundara, en République de Guinée.
+
+								<br><strong>Scolarisé en 2012, fin d’année 2016, son Père lui sort de l’école et l’envoie au Sénégal pour mémoriser le Coran. </strong>
+								Il était obligé d’abandonné ses études
+								sans le vouloir, car il était encore un enfant. Ce choix, bien que difficile à comprendre à cet âge, a
+								forgé sa foi, sa discipline et sa force intérieure, ce ceux valeurs qui le guident encore aujourd’hui.
+
+								<br><strong>Il</strong> s’est fait connaître sur les réseaux sociaux grâce à ses vidéos humoristiques et inspirantes, avant de s’imposer 
+								comme une figure montante du cinéma africain.
+								Originaire de Sareboido, un petit village de la région de Koundara, Mouctar Boiro grandit à l’étranger Fils de Boubacar et Mariama.
+
+								Enfant, Son Père l’envoie au Sénégal pour mémoriser le Coran. Il était obligé d’abandonné ses études sans le vouloir, 
+								car il était encore un enfant. Ce choix, bien que difficile à comprendre à cet âge, a forgé sa foi, sa discipline et sa force intérieure, 
+								ce ceux valeurs qui le guident encore aujourd’hui. 
+								en nourrissant son rêve de devenir un Acteur international, et devenir encore un grand électricien.  
+
+								<br><strong>Il</strong> développe très jeune une passion pour le théâtre, la comédie et surtout de devenir un grand électricien. 
+
+								C’est là qu’il fait ses premiers pas dans la comédie en
+								publiant des vidéos humoristiques sur les réseaux sociaux, qui rencontrent rapidement un grand
+								succès. En 2021, il quitte l’Afrique pour rejoindre l’Europe, avant de s’installer en France en 2022, à Paris, où il continue son parcours artistique. 
+
+								En arrivant en France, il a recommencé ses études avec
+								détermination, prouvant qu’il n’est jamais trop tard pour reprendre le chemin du savoir.
+								Ses vidéos sont suivies par plus de 1,5 million d’abonnés, faisant de lui l’un des jeunes talents les
+								plus prometteurs de sa génération.
+
+								<br><strong>Mouctar Boiro</strong> s’impose progressivement comme un acteur ambitieux. En 2025, son film est sélectionné au Festival International du Film Pan-Africain de Cannes,
+								 où il était projeté
+								le 23 octobre 2025. Cette reconnaissance internationale marque une étape majeure dans sa jeune carrière et confirme son talent artistique.
+
+								En parallèle, Mouctar s’engage dans plusieurs projets sociaux et humanitaires. Il fonde une
+								association dédiée aux orphelins de son village natal, Sareboido, à travers laquelle il offre des
+								fournitures scolaires et un soutien moral aux enfants défavorisés.
+
+								<br><strong>Par son parcours, il incarne la réussite, la persévérance et l’amour de sa patrie.
+
+								Il reste profondément attaché à la Guinée et à l’Afrique, qu’il met en avant dans toutes ses créations.</strong>
+						</p>
+						<h2 class="universal-h2 universal-h2-bckg">Mouctar Boiro – Prince Jr</h2>
+						<a href="https://www.imdb.com/fr/name/nm17312149/?ref_=tt_ov_3_1" class="p-white">ils parlen de moi</a>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+		<div class="about-me-bckg"></div>
+	</section>
+	<!-- About me end -->
+
+	<!-- Books and CD -->
+	<section class="fh5co-books">
+		<div class="site-container">
+			<h2 class="universal-h2 universal-h2-bckg">Filmographie</h2>
+			<div class="books ">
+				<div class="single-book">
+					<p>
+						<img src="{% static 'images/films2.jpg' %}" alt="single book and cd" style="width: 100%; height: 100%;">
+						<div class="single-book_download">
+							<img src="{% static 'images/download.svg' %}" alt="book image">
+						</div>
+					</p>
+					<h4 class="single-book__title"><strong><a href="https://www.imdb.com/fr/title/tt36968706/?ref_=nm_ov_bio_lk">Le Meilleur du Monde</a></strong></h4>
+					<span class="single-book__price mb-3">Sortie: 2025</span>
+					
+				</div>
+			</div>
+
+			<div class="books mt-5">
+				<div class="single-book">
+					<p><strong>Synopsis:</strong> Le Meilleur du monde suit Moutar, un migrant guinéen cherchant à se reconstruire à Paris. 
+						En s'inscrivant dans une école associative, il rencontre Marion, une éducatrice américaine qui dirige un atelier théâtre auquel il participe. 
+						Moutar raconte alors son histoire tragique et les raisons qui l'ont pousse à quitter son pays. Mais les difficultés qu'il rencontre à Paris déclenchent
+						 des cauchemars qui laissent entrevoir une vérité bien plus sombre. Lors d'un atelier, tout bascule, forçant Mouctar à affronter son passé. 
+						 En livrant enfin sa vérité, Moutar crée un lien avec Marion qui l'aide à se libérer de son enfance cauchemardesque et à pardonner à ceux qui l'ont blessé.
+					</p>
+				</div>
+			</div>
+
+			<div class="books">
+				<div class="single-book" style="position: relative; width: 100%; height: 0; padding-bottom: 56.25%;">
+					<h1 class="single-book__title mb-3"><strong>Trailer VF</strong></h1>
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/RNs1wMnJXzY?si=qYua6jydiwbUFRDT" 
+					title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+					</iframe>
+				</div>
+			</div>
+			
+			<!--div class="books-brand-button">
+				<a href="https://www.tiktok.com/@princejr11?_t=ZN-90kbgNbKLn1&_r=1" class="brand-button">View more</a>
+			</div-->
+		</div>
+	</section>
+	<!-- Books and CD end -->
+
+	<!-- Counter -->
+	
+	<div class="fh5co-counter counters">
+		<div class="site-container">
+			<h2 class="universal-h2 universal-h2-bckg mb-5">Mes réseaux sociaux</h2>
+		</div>
+		<div class="counter-inner site-container">
+			
+			<div class="single-count">
+				<span class="count" data-count="1000000">0</span>
+				<div class="single-count__text">
+					<img src="{% static 'images/tiktoka.png' %}" alt="counter icon" style="width: 20%; height: 20%;">
+					
+				</div>
+			</div>
+			<div class="single-count">
+				<span class="count" data-count="600000">0</span>
+				<div class="single-count__text">
+					<i class="bi bi-facebook" style="font-size: 3rem; color: #1877F2;"></i>
+					
+				</div>
+			</div>
+			<div class="single-count">
+				<span class="count" data-count="20000">0</span>
+				<div class="single-count__text">
+					<i class="bi bi-instagram" style="font-size: 2rem; color: #E1306C;"></i>
+				</div>
+			</div>
+			<div class="single-count">
+				<span class="count" data-count="125000">0</span>
+				<div class="single-count__text">
+					<i class="bi bi-youtube" style="font-size: 2rem; color: red;"></i>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Counter -->
+
+	
+
+	<!-- Quotes -->
+	<section class="fh5co-quotes">
+		<div class="site-container">
+			<div class="about-me-slider">
+				<div>
+					<h2 class="universal-h2 universal-h2-bckg">What People Are Saying</h2>
+					<p>“Pudding croissant cake candy canes fruitcake sweet roll pastry gummies sugar plum. Tart pastry danish soufflé donut bear claw chocolate cake marshmallow chupa chups. Jelly danish gummi bears cake donut powder chocolate cake. Bonbon soufflé lollipop biscuit dragée jelly-o. Wafer pastry pudding tiramisu chocolate bar croissant cake. Pie caramels gummies danish.”</p>
+					<img src="{% static 'images/quotes.svg' %}" alt="quotes svg">
+					<h4>David Dixon</h4>
+					<p>Reader</p>
+				</div>
+				<div>
+					<h2 class="universal-h2 universal-h2-bckg">What People Are Saying 2</h2>
+					<p>“Pudding croissant cake candy canes fruitcake sweet roll pastry gummies sugar plum. Tart pastry danish soufflé donut bear claw chocolate cake marshmallow chupa chups. Jelly danish gummi bears cake donut powder chocolate cake. Bonbon soufflé lollipop biscuit dragée jelly-o. Wafer pastry pudding tiramisu chocolate bar croissant cake. Pie caramels gummies danish.”</p>
+					<img src="{% static 'images/quotes.svg' %}" alt="quotes svg">
+					<h4>David Dixon</h4>
+					<p>Reader</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Quotes end -->
+
+	<!-- Social -->
+	<section class="fh5co-social">
+		<div class="site-container">
+			<div class="social">
+				<h5>Follow me!!</h5>
+				<div class="social-icons">
+					<a href="#" target="_blank"><img src="{% static 'images/social-twitter.png' %}" alt="social icon"></a>
+					<a href="#" target="_blank"><img src="{% static 'images/tiktoka.png' %}" alt="counter icon" style="width: 40%; height: 40%;"</a>
+					<a href="#" target="_blank"><img src="{% static 'images/social-youtube.png' %}" alt="social icon"></a>
+					<a href="#" target="_blank"><img src="{% static 'images/social-twitter.png' %}" alt="social icon"></a>
+				</div>
+				<h5>Mouctar Boiro – Prince Jr</h5>
+			</div>
+		</div>
+	</section>
+	<!-- Social -->
+
+	<!-- Footer -->
+	<footer class="site-footer">
+		<div class="site-container">
+			<div class="footer-inner">
+				<div class="footer-info">
+					<div class="footer-info__left">
+						<img src="{% static 'images/initiales_logo.png' %}" alt="about me image" style="width: 100px; height: 100px;">
+						<p>Mouctar Boiro – Prince Jr</p>
+					</div>
+					<div class="footer-info__right">
+						<h5>Colaborations</h5>
+						<p class="footer-phone">Phone: 06 11 44 44 44</p>
+						<p>Email : MBPJr@Example.com</p>
+						
+					</div>
+				</div>
+				<div class="footer-contact-form">
+					<h5>Contact</h5>
+					<form class="contact-form">
+						<div class="contact-form__input">
+							<input type="text" name="name" placeholder="Name">
+							<input type="email" name="email" placeholder="Email">
+						</div>
+						<textarea></textarea>
+						<input type="submit" name="submit" value="Submit" class="submit-button">
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="footer-bottom">
+			<div class="site-container footer-bottom-inner">
+				<p>© 2025 Aliou DIALLO Developpeur Web | Design by Gabithex | aliou@gabithex.fr</a> | All rights Reserved.</p>
+			</div>
+		</div>
+	</footer>
+	<!-- Footer end -->
+
+	<!-- Scripts -->
+	<script src="{% static 'js/jquery.min.js' %}"></script>
+	<script src="{% static 'js/slick.min.js' %}"></script>
+	<script src="{% static 'js/main.js' %}"></script>
+
+</body>
+</html>
